@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mensaje especial</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffe6eb;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+            position: relative;
+        }
+
+        /* Flores rojas de fondo */
+        .flor {
+            position: absolute;
+            font-size: 26px;
+            opacity: 0.6;
+        }
+
+        /* Corazones flotando */
+        .heart {
+            position: absolute;
+            bottom: -30px;
+            font-size: 22px;
+            animation: flotar 9s linear infinite;
+            opacity: 0.8;
+        }
+
+        @keyframes flotar {
+            0% {
+                transform: translateY(0) scale(1);
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(-120vh) scale(1.4);
+                opacity: 0;
+            }
+        }
+
+        .contenedor {
+            background: rgba(255, 255, 255, 0.97);
+            padding: 25px;
+            border-radius: 18px;
+            width: 90%;
+            max-width: 360px;
+            text-align: center;
+            box-shadow: 0 8px 18px rgba(0,0,0,0.2);
+            z-index: 2;
+        }
+
+        h2 {
+            color: #e63946;
+            margin-bottom: 15px;
+        }
+
+        textarea {
+            width: 100%;
+            height: 160px;
+            border-radius: 12px;
+            padding: 12px;
+            resize: none;
+            border: 1px solid #ccc;
+            font-size: 15px;
+            box-sizing: border-box;
+        }
+
+        .mensaje {
+            margin-top: 12px;
+            font-weight: bold;
+            color: #333;
+            font-size: 15px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Flores rojas -->
+<span class="flor" style="top:5%; left:5%;">🌹</span>
+<span class="flor" style="top:15%; left:80%;">🌹</span>
+<span class="flor" style="top:30%; left:20%;">🌹</span>
+<span class="flor" style="top:45%; left:70%;">🌹</span>
+<span class="flor" style="top:60%; left:10%;">🌹</span>
+<span class="flor" style="top:75%; left:85%;">🌹</span>
+<span class="flor" style="top:85%; left:40%;">🌹</span>
+
+<!-- Corazones flotando -->
+<span class="heart" style="left:10%; animation-delay:0s;">❤️</span>
+<span class="heart" style="left:25%; animation-delay:2s;">❤️</span>
+<span class="heart" style="left:40%; animation-delay:4s;">❤️</span>
+<span class="heart" style="left:60%; animation-delay:1s;">❤️</span>
+<span class="heart" style="left:75%; animation-delay:3s;">❤️</span>
+<span class="heart" style="left:90%; animation-delay:5s;">❤️</span>
+
+<div class="contenedor">
+    <h2> PARA VALERIA ❤️</h2>
+
+    <textarea readonly>
+Espero que te guste tu regalo. Te amo mucho, no puedo dejar de pensar en ti y siempre estaré para ti, pequeña. Eres muy especial para mí y quiero que nunca olvides lo importante que eres en mi vida.
+    </textarea>
+
+    <div class="mensaje">
+        💖 Con todo mi cariño
+    </div>
+</div>
+
+</body>
+</html>
